@@ -1,17 +1,13 @@
-# Nome do projeto
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+# Backend para Locadora de veiculos
+O projeto de Backend para uma Locadora de Veículos tem como objetivo principal criar um sistema que permita o cadastro e gerenciamento eficiente de clientes e veículos. Além disso, o sistema será responsável por controlar as reservas feitas pelos clientes, garantindo uma organização precisa das disponibilidades de veículos e facilitando o processo de locação. Com uma estrutura sólida, busca-se simplificar a gestão interna da locadora, promovendo um serviço mais ágil e eficaz para os clientes.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Alex Gonçalves
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Leonardo Vilela Cardoso
 
 ## Instruções de utilização
 
