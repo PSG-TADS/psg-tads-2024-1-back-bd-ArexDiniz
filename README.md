@@ -3,7 +3,7 @@ O projeto de Backend para uma Locadora de Veículos tem como objetivo principal 
 
 ## Alunos integrantes da equipe
 
-* Alex Gonçalves
+* Alex Gonçalves Diniz
 
 ## Professores responsáveis
 
