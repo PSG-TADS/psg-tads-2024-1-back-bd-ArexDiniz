@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace codigo.Migrations
 {
     /// <inheritdoc />
-    public partial class LocadoraVeiculos : Migration
+    public partial class LocadoraDeVeiculos : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Clientes",
+                name: "Cliente",
                 columns: table => new
                 {
                     ClienteID = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace codigo.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Clientes", x => x.ClienteID);
+                    table.PrimaryKey("PK_Cliente", x => x.ClienteID);
                 });
 
             migrationBuilder.CreateTable(
@@ -58,9 +58,9 @@ namespace codigo.Migrations
                 {
                     table.PrimaryKey("PK_Reservas", x => x.ReservaID);
                     table.ForeignKey(
-                        name: "FK_Reservas_Clientes_ClienteID",
+                        name: "FK_Reservas_Cliente_ClienteID",
                         column: x => x.ClienteID,
-                        principalTable: "Clientes",
+                        principalTable: "Cliente",
                         principalColumn: "ClienteID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -89,7 +89,7 @@ namespace codigo.Migrations
                 name: "Reservas");
 
             migrationBuilder.DropTable(
-                name: "Clientes");
+                name: "Cliente");
 
             migrationBuilder.DropTable(
                 name: "Veiculos");

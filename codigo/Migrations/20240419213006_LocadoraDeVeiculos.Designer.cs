@@ -3,17 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using codigo;
+using codigo.Models;
 
 #nullable disable
 
 namespace codigo.Migrations
 {
-    [DbContext(typeof(Program.LocadoraContext))]
-    partial class LocadoraContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(LocacaoContext))]
+    [Migration("20240419213006_LocadoraDeVeiculos")]
+    partial class LocadoraDeVeiculos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,7 +25,7 @@ namespace codigo.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("codigo.Program+Cliente", b =>
+            modelBuilder.Entity("codigo.Models.Cliente", b =>
                 {
                     b.Property<int>("ClienteID")
                         .ValueGeneratedOnAdd()
@@ -44,10 +47,10 @@ namespace codigo.Migrations
 
                     b.HasKey("ClienteID");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("Cliente");
                 });
 
-            modelBuilder.Entity("codigo.Program+Reserva", b =>
+            modelBuilder.Entity("codigo.Models.Reserva", b =>
                 {
                     b.Property<int>("ReservaID")
                         .ValueGeneratedOnAdd()
@@ -76,7 +79,7 @@ namespace codigo.Migrations
                     b.ToTable("Reservas");
                 });
 
-            modelBuilder.Entity("codigo.Program+Veiculo", b =>
+            modelBuilder.Entity("codigo.Models.Veiculo", b =>
                 {
                     b.Property<int>("VeiculoID")
                         .ValueGeneratedOnAdd()
@@ -106,15 +109,15 @@ namespace codigo.Migrations
                     b.ToTable("Veiculos");
                 });
 
-            modelBuilder.Entity("codigo.Program+Reserva", b =>
+            modelBuilder.Entity("codigo.Models.Reserva", b =>
                 {
-                    b.HasOne("codigo.Program+Cliente", "Cliente")
+                    b.HasOne("codigo.Models.Cliente", "Cliente")
                         .WithMany()
                         .HasForeignKey("ClienteID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("codigo.Program+Veiculo", "Veiculo")
+                    b.HasOne("codigo.Models.Veiculo", "Veiculo")
                         .WithMany()
                         .HasForeignKey("VeiculoID")
                         .OnDelete(DeleteBehavior.Cascade)
