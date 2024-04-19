@@ -14,6 +14,8 @@ namespace Locadora
             public string Modelo { get; set; }
             public int Ano { get; set; }
             public float ValorDiaria { get; set; }
+
+            public Boolean Reservado { get; set; }
         }
 
         public class Cliente
