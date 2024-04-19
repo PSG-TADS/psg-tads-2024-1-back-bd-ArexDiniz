@@ -52,7 +52,7 @@ namespace codigo
 
             protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             {
-                _ = optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS ; Database=Locadora;Trusted_Connection=True;TrustServerCertificate=true");
+                _ = optionsBuilder.UseSqlServer(@"Server=.\SQLEXPRESS ; Database=LocadoraVeiculso;Trusted_Connection=True;TrustServerCertificate=true");
             }
         }
         public static void Main(string[] args)
