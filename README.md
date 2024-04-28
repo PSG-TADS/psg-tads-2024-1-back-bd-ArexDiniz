@@ -11,4 +11,6 @@ O projeto de Backend para uma Locadora de Veículos tem como objetivo principal 
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+1°Abrir o projeto no Visual Studio Community.
+2° Pressionar Ctrl + F5.
+3°Utilizar o Swagger para fazer as requisições.
