@@ -11,6 +11,6 @@ O projeto de Backend para uma Locadora de Veículos tem como objetivo principal 
 
 ## Instruções de utilização
 
-1°Abrir o projeto no Visual Studio Community.
-2° Pressionar Ctrl + F5.
-3°Utilizar o Swagger para fazer as requisições.
+1°Abrir o projeto no Visual Studio Community.<br>
+2° Pressionar Ctrl + F5.<br>
+3°Utilizar o Swagger para fazer as requisições.<br>
