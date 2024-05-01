@@ -119,7 +119,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 | Nome            | Nome do cliente.                                                                    |
 | Telefone        | Número de telefone do cliente.                                                      |
 | Email           | Endereço de e-mail do cliente.                                                      |
-| Locacoes        | Relacionamento um para muitos com a tabela Locacao, representando as locações associadas a esse cliente. |
 
 ## Conclusão
 Em resumo, a documentação produzida representa um recurso valioso para todos os envolvidos no projeto, fornecendo uma base sólida para o desenvolvimento de um sistema de gerenciamento de locadora de veículos que atenda às necessidades e expectativas dos clientes e usuários finais. Com uma abordagem estruturada e orientada para resultados, estamos confiantes de que o projeto será um sucesso e contribuirá positivamente para o crescimento e a inovação da LoCar.
