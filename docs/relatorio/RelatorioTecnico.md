@@ -94,7 +94,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ### Veiculo:
 | Campo           | Descrição                                                                           |
 |-----------------|-------------------------------------------------------------------------------------|
-| IDVeiculoPlaca     | Chave primária que identifica cada veículo.                              |
+| IDVeiculo  | Chave primária que identifica cada veículo.                              |
 | Modelo          | Modelo do veículo.                                                                  |
 | Marca           | Marca do veículo.                                                                   |
 | Ano             | Ano de fabricação do veículo.                                                       |
@@ -106,8 +106,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 | Campo           | Descrição                                                                           |
 |-----------------|-------------------------------------------------------------------------------------|
 | IDReserva  | Chave primária que identifica cada locação.                               |
-| IDClienteCPF        | Chave estrangeira que faz referência ao CPF do cliente    |
-| IDVeiculoPlaca      | Chave estrangeira que faz referência à placa do veículo    |
+| IDCliente        | Chave estrangeira que faz referência ao cliente    |
+| IDVeiculo      | Chave estrangeira que faz referência ao veículo    |
 | DataInicio      | Data de início da locação.                                                          |
 | DataFim         | Data de término da locação.                                                         |
 
@@ -115,7 +115,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ### Cliente:
 | Campo           | Descrição                                                                           |
 |-----------------|-------------------------------------------------------------------------------------|
-| IDClienteCPF      | Chave primária que identifica unicamente cada cliente.                                |
+| IDCliente      | Chave primária que identifica unicamente cada cliente.                                |
 | Nome            | Nome do cliente.                                                                    |
 | Telefone        | Número de telefone do cliente.                                                      |
 | Email           | Endereço de e-mail do cliente.                                                      |
