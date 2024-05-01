@@ -5,5 +5,5 @@ A documentação do projeto é composta pelos seguintes itens:
  - [Relatório Têcnico.pdf](https://github.com/PSG-TADS/psg-tads-2024-1-back-bd-ArexDiniz/files/15142785/Latex.pdf)
 
  - [Apresentação do Projeto](apresentacao/apresentacao%20-%20TEMPLATE.pptx)
- - [Vídeo de Demonstração](https://youtube.com)
+ - [Vídeo de Demonstração](https://www.youtube.com/watch?v=BD_rGVw4uxw)
 
